@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ProfileFoundry</title>
+    <meta
+      name="description"
+      content="A small GitHub Pages smoke test for the ProfileFoundry organization."
+    />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --ink: #17202a;
+        --muted: #53616f;
+        --line: #d7dde3;
+        --paper: #f7f9fb;
+        --panel: #ffffff;
+        --accent: #287f71;
+        --accent-strong: #1e655b;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --ink: #ecf2f7;
+          --muted: #aab6c2;
+          --line: #34424f;
+          --paper: #121820;
+          --panel: #19222c;
+          --accent: #6ed0be;
+          --accent-strong: #98e5d7;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 32px;
+        background: var(--paper);
+        color: var(--ink);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        line-height: 1.5;
+      }
+
+      main {
+        width: min(720px, 100%);
+        padding: clamp(28px, 7vw, 56px);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+        box-shadow: 0 20px 60px rgb(15 23 42 / 10%);
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        color: var(--accent-strong);
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.2rem, 7vw, 4.6rem);
+        line-height: 0.95;
+        letter-spacing: 0;
+      }
+
+      p {
+        margin: 20px 0 0;
+        max-width: 58ch;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
+      .status {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 32px;
+      }
+
+      .status span {
+        display: inline-flex;
+        align-items: center;
+        min-height: 36px;
+        padding: 7px 12px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        color: var(--ink);
+        font-size: 0.92rem;
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        margin-right: 8px;
+        border-radius: 999px;
+        background: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">GitHub Pages smoke test</p>
+      <h1>ProfileFoundry is online.</h1>
+      <p>
+        This page confirms that the organization Pages repository is serving
+        static content correctly.
+      </p>
+      <div class="status" aria-label="Deployment checks">
+        <span><span class="dot" aria-hidden="true"></span>Static HTML</span>
+        <span>Custom build not required</span>
+        <span>Ready for GitHub Pages</span>
+      </div>
+    </main>
+  </body>
+</html>
