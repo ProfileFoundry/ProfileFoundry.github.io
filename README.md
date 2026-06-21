@@ -8,7 +8,7 @@ Create a public repository named `ProfileFoundry.github.io` under the
 `ProfileFoundry` organization, then push this repo:
 
 ```sh
-git remote add origin git@github.com:ProfileFoundry/ProfileFoundry.github.io.git
+git remote add origin https://github.com/ProfileFoundry/ProfileFoundry.github.io.git
 git push -u origin main
 ```
 
